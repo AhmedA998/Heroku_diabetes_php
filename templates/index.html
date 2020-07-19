@@ -66,25 +66,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
             <div class="form-control">
                 <label class="header">Are You Smoker <span>:</span></label>
-                <select name="currentsmoker" id="no" onchange="myFunction()" required="required" id="select2">
+                <select name="currentsmoker" required="required" id="select2">
                         <option value="1">Yes</option>
-                        <option id="no" value="0">No</option>
+                        <option value="0">No</option>
                 </select>
             </div>
 
-            <script>
-                function myFunction() {
-                    var print = document.getElementById('no').value;
-                    var print = document.getElementById('c').value = "0";
-
-                }
-            </script>
-
             <div class="form-control">
                 <label class="header">Cigarettes-PerDay<span>:</span></label>
-                <input type="number" name="cigsPerDay" onchange="myFunction()"id="c" id="cig" placeholder="How Many Cigarettes-PerDay ?" title="How Many Cigarettes-perday ?" required="required" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)"
-                    min="0" max="110" step="any" />
+                <input type="number" name="cigsPerDay" id="cig" placeholder="How Many Cigarettes-PerDay ?" title="How Many Cigarettes-perday ?" required="required" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" min="0" max="110"
+                    step="any" />
+
             </div>
+
 
 
             <div class="form-control">
