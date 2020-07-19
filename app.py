@@ -5,6 +5,10 @@ import pickle
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
 
+
+
+
+
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -30,7 +34,8 @@ def predict():
     elif  prediction==0 :
      return render_template('index.html', prediction_text ='You are not threatened with heart disease during the next ten years',  predictions_prob = 'with ratio  ',p = x, per = '%')
 
-   
+s = Timer(3.0, predict,())
+ s.start()
    # output = round(prediction[0], 2)
 
 @app.route('/predict_api',methods=['POST'])
