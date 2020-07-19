@@ -25,9 +25,9 @@ def predict():
     
     
     
-    c=(predictionsProb*100)
+    c=(predictionsProb)
     for b,value in enumerate(c,1):
-      x=round(max(value))
+      x=round(max(value*100))
      
     if prediction==1 :
      return render_template('index.html', prediction_text ='you are at risk of infection by heart disease over the next ten years',  predictions_prob = 'with ratio  ',p = x,per = '%')
