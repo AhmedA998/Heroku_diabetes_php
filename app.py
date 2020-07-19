@@ -1,19 +1,21 @@
 import numpy as np
 import time
+import threading
 from flask import Flask, request, jsonify, render_template
 import pickle
 
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
 
-
+delay = 5
 
 
 
 @app.route('/')
 def home():
     return render_template('index.html')
-    time.sleep(5)
+
+
 
 @app.route('/',methods=['POST'])
 def predict():
@@ -25,7 +27,7 @@ def predict():
     prediction = model.predict(final_features)
     predictionsProb =model.predict_proba(final_features)
     
-    
+start_time = threading.Timer(5,predict)
     
     c=(predictionsProb)
     for b,value in enumerate(c,1):
