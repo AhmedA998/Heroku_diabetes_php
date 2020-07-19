@@ -27,7 +27,6 @@ def predict():
     prediction = model.predict(final_features)
     predictionsProb =model.predict_proba(final_features)
     
-start_time = threading.Timer(5,predict)
     
     c=(predictionsProb)
     for b,value in enumerate(c,1):
@@ -51,6 +50,7 @@ def predict_api():
 
     output = prediction[0]
     return jsonify(output)
-
+start_time = threading.Timer(5,predict)
+start_time.start()
 if __name__ == "__main__":
     app.run(debug=True)
