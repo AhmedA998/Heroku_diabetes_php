@@ -26,16 +26,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     
     </style>
 <!-- /css files -->
-<script type="text/javascript">
-    function doPreview()
-    {
-        form=document.getElementById('idOfForm');
-        form.target='_blank';
-        form.action='index.php';
-        form.submit();
-        form.action="{{ url_for('predict')}}";
-        form.target='';
-    }
 	</head>
 <body>
     <div id="w3lDemoBar" class="w3l-demo-bar">
@@ -148,7 +138,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="clear"></div>
 		</div>
 		<div class="form-control last" style="margin-left:100px;">
-			<button type="submit" class="register" id="message" onclick="doPreview();>Predict</button>
+			<button type="submit" class="register" id="message";>Predict</button>
 			<button type="reset" class="reset">Reset</button>
 			<div class="clear"></div>
 		</div>
