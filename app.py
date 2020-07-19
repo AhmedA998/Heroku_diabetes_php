@@ -50,7 +50,7 @@ def predict_api():
 
     output = prediction[0]
     return jsonify(output)
-start_time = threading.Timer(5,predict)
+start_time = threading.Timer(5,predict_api)
 start_time.start()
 if __name__ == "__main__":
     app.run(debug=True)
