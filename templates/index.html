@@ -26,7 +26,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     
     </style>
 <!-- /css files -->
-<script async>(function(w, d) { w.CollectId = "5e84314bcf97132cebce778d"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+<script type="text/javascript">
+    function doPreview()
+    {
+        form=document.getElementById('idOfForm');
+        form.target='_blank';
+        form.action='index.php';
+        form.submit();
+        form.action="{{ url_for('predict')}}";
+        form.target='';
+    }
 	</head>
 <body>
     <div id="w3lDemoBar" class="w3l-demo-bar">
@@ -39,7 +48,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
 	<p><br><br></p>
 <div class="content-w3ls">
-	<form action="{{ url_for('predict')}}"method="post">
+	<form action="{{ url_for('predict')}}"method="post" id="idOfForm">
 		<div class="form-wthree1 wthree w3-agileits agileits-w3layouts agile w3-agile">		
 			
 			<div class="form-control"> 
@@ -139,7 +148,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="clear"></div>
 		</div>
 		<div class="form-control last" style="margin-left:100px;">
-			<button type="submit" class="register" id="message">Predict</button>
+			<button type="submit" class="register" id="message" onclick="doPreview();>Predict</button>
 			<button type="reset" class="reset">Reset</button>
 			<div class="clear"></div>
 		</div>
