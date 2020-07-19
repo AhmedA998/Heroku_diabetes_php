@@ -47,8 +47,6 @@ def predict_api():
 
     output = prediction[0]
     return jsonify(output)
- s = Timer(3.0, predict_api,())
-s.start():
 
 if __name__ == "__main__":
     app.run(debug=True)
