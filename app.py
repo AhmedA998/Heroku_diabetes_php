@@ -39,7 +39,7 @@ def predict():
 
    # output = round(prediction[0], 2)
    
-@app.route('/predict_api',methods=['POST'])
+@app.route('/',methods=['POST'])
 def predict_api():
     '''
     For direct API calls trought request
