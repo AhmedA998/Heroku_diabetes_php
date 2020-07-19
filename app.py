@@ -1,4 +1,5 @@
 import numpy as np
+import time
 from flask import Flask, request, jsonify, render_template
 import pickle
 
@@ -12,6 +13,7 @@ model = pickle.load(open('model.pkl', 'rb'))
 @app.route('/')
 def home():
     return render_template('index.html')
+    time.sleep(5)
 
 @app.route('/',methods=['POST'])
 def predict():
