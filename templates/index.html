@@ -160,9 +160,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!--{{ prediction_text }}<br>{{predictions_prob}}-->
 
         </form>
-        <div style="text-align:center">
-
+                <button type="submit" class="register" id="message" onclick="send()">Predict</button>
                 <button type="submit" class="reset" onclick="send()">Send</button>
+        <script>
+    function submitForm() {
+        document.getElementById("idOfForm").submit()
+    }
+
+    document.getElementById('message').onclick = function() {
+        setTimeout(submitForm, 3000); 
+    }
+</script>
          </div>
     </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
