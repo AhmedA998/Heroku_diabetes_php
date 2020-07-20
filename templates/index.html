@@ -160,7 +160,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!--{{ prediction_text }}<br>{{predictions_prob}}-->
 
         </form>
-                <button type="submit" class="register" id="message" onclick="send()">Predict</button>
+        <div style="text-align:center">
+
                 <button type="submit" class="reset" onclick="send()">Send</button>
          </div>
     </div>
@@ -172,15 +173,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
 
     <script>
-        
-         function submitForm() {
-        document.getElementById("idOfForm").submit()
-    }
-
-    document.getElementById('message').onclick = function() {
-        setTimeout(submitForm(), 1000); 
-    }
-        
         // Your web app's Firebase configuration
         var firebaseConfig = {
             apiKey: "AIzaSyAYBJkrUGNXyGYO0UL1EVqdTd3TBX75sx0",
