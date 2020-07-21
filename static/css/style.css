@@ -148,7 +148,7 @@ label.header span {
 	right:15px;
 	top:0;
 }
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
     border: 0.25px solid #403f3f;
     color: black;
     text-align: justify;
