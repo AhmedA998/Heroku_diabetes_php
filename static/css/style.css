@@ -735,7 +735,7 @@ textarea#message {
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
   padding: 10px 15px;
-    background-color:#009DFF;
+    background-color: rgba(0, 0, 0, 0.1);
   
   box-shadow: 0 1px 10px rgba(13, 19, 38, 0.5);
 }
@@ -776,10 +776,10 @@ textarea#message {
 #w3lDemoBar.w3l-demo-bar a {
   display: inline-block;
   border-radius: 3px;
-  color: white;
+  color: black;
   text-decoration: none;
   line-height: 24px;
-  opacity: .6;
+  font-weight:bold;
 }
 #w3lDemoBar.w3l-demo-bar a:hover {
   opacity: 1;
