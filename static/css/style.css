@@ -178,7 +178,7 @@ select {
     border-radius: 5px;
 }
 select option {
-    background-color: #000;
+    background-color: white;
     color: black;
 	font-family: 'Raleway', sans-serif;
 }
