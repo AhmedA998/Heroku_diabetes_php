@@ -30,7 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link rel="shortcut icon" type="image/x-icon" href="../static/img/logo.png">
     <style>
         body {
-            background-color:white;
+            background-image:url(../static/img/log.jpg);
         }
     </style>
     <!-- /css files -->
@@ -152,7 +152,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <output id="message" style="color:black;font-size:18px;">{{ prediction_text }}<br>{{predictions_prob}} &nbsp; <span style="color:red;">{{p}}{{per}}</span></output>
             <div class="clear"></div>
         </div>
-        <div class="form-control last" style="margin-left:100px;">
+        <div class="form-control last">
             <button type="submit" class="register" id="message" >Predict</button>
             
             <div class="clear"></div>
@@ -160,10 +160,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!--{{ prediction_text }}<br>{{predictions_prob}}-->
 
         </form>
-        <div style="text-align:center">
-
-                <button type="submit" class="reset" onclick="send()">Send</button>
-         </div>
+         <button type="submit" class="reset" onclick="send()">Send</button>
     </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
