@@ -158,7 +158,7 @@ input#firstname,input#middlename,input#lastname,input#address,input#address2,inp
     font-weight: normal;	
     border-radius: 5px;
 }
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#usrtel {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
 	height:40px;
 	padding:0 15px;
 	width:55%;
