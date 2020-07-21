@@ -245,9 +245,7 @@ color:#787878!important;
 .register {
 	background-color:#36b051;
     width:20%;
-	margin-right:10px;
-	margin-left:200px;
-	float:left;
+	margin-right:50px;
     height: 50px;
     border: none;
     cursor: pointer;
@@ -271,6 +269,7 @@ color:#787878!important;
 .reset {
 	background-color:#36b051;
     width:20%;
+    margin-left: 190px;
 	float:left;
     height: 50px;
     border: none;
