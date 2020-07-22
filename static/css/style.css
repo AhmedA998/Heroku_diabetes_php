@@ -80,7 +80,7 @@ img {
 }
 
 /*--- end reset code ---*/
-body{
+body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -90,10 +90,8 @@ body{
     -o-background-size: cover;
     -ms-background-size: cover;
     font-family: 'Raleway', sans-serif;
-    background-image: url(log.jpg);
 	
 }
-
 h1.header-agileits {
     text-align: center;
     font-size: 50px;
@@ -114,8 +112,10 @@ p.header-agileits {
 .content-w3ls {
 	width: 72%;
     margin: 20px auto 50px;
+    background-color: rgba(3, 9, 12, 0.65);
+    border: 0.5px solid #403f3f;
     padding:50px;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 .form-wthree1 {
 	margin:0;
@@ -134,10 +134,9 @@ p.header-agileits {
 }
 label.header {
     font-size: 17px;
-    font-weight: bold;
     width:195px;
     font-weight: 500;
-    color: black;
+    color: #fff;
     text-align: justify;
     letter-spacing: 1px;
     
@@ -152,12 +151,14 @@ label.header span {
 }
 input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
     border: 0.25px solid #403f3f;
-    color: black;
+    color: white;
     text-align: justify;
     outline: none;
     letter-spacing: 1px;
     font-size: 12px;
-    font-weight: normal;	
+    font-weight: normal;
+    background-color: rgba(0,0,0,0.40);
+	
     border-radius: 5px;
 }
 input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
@@ -167,12 +168,13 @@ input#firstname,input#middlename,input#lastname,input#address,input#address2,inp
 }
 select {
 	border: 0.25px solid #403f3f;
-    color: black;
+    color: #787878;
     text-align: justify;
     outline: none;
     letter-spacing: 1px;
     font-size: 15px;
     font-weight: normal;
+    background-color: rgba(0,0,0,0.40);
 	height:40px;
 	padding:0 15px;
 	width:60.8%;
@@ -180,8 +182,8 @@ select {
     border-radius: 5px;
 }
 select option {
-    background-color: white;
-    color: black;
+    background-color: #000;
+    color: #fff;
 	font-family: 'Raleway', sans-serif;
 }
 .form-control.output{
@@ -195,7 +197,7 @@ label.enquiry {
 	font-size: 17px;
     width:200px;
     font-weight: 500;
-    color: black;
+    color: #fff;
     float: left;
     text-align: justify;
     letter-spacing: 2px;
@@ -270,8 +272,7 @@ color:#787878!important;
 .reset {
 	background-color:#36b051;
     width:20%;
-    
-	margin-left: 200px;
+	
     height: 50px;
     border: none;
     cursor: pointer;
@@ -324,7 +325,7 @@ select {
 }
 
 @media (max-width:1440px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel{
 	width:50.9%;
     
 }
@@ -342,7 +343,7 @@ label.header {
 	font-size:15px;
 	width:180px;	
 }
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     width: 51.5%;
 }
 select {
@@ -353,7 +354,7 @@ label.enquiry {
     width: 184px;
 }
 .register {
-	margin-left:50px;
+	margin-left:20px;
 }
 }
 
@@ -389,7 +390,7 @@ textarea#message {
 }
 
 @media (max-width:1080px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
 	font-size:14px;	
 	width:43%;
 }
@@ -426,7 +427,7 @@ h1.header-agileits {
 }
 
 @media (max-width: 1050px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel{
     font-size: 14px;
     width: 41%;
 }
@@ -450,7 +451,7 @@ textarea#message {
 .form-wthree1, .form-wthree2 {
     width: 100%;
 }
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width: 71.6%;
 }
@@ -464,7 +465,7 @@ textarea#message {
 }
 
 @media (max-width: 900px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width: 68.6%;
 }
@@ -483,7 +484,7 @@ p.copyright {
 }
 
 @media (max-width: 800px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width: 64.5%;
 }
@@ -497,7 +498,7 @@ textarea#message {
 }
 
 @media (max-width: 768px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width: 63.1%;
 }
@@ -511,7 +512,7 @@ textarea#message {
 }
 
 @media (max-width: 736px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width: 61.5%;
 }
@@ -529,7 +530,7 @@ textarea#message {
 }
 
 @media (max-width: 667px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width: 57.4%;
 }
@@ -547,7 +548,7 @@ textarea#message {
 }
 
 @media (max-width: 640px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width: 55.5%;
 }
@@ -571,7 +572,7 @@ textarea#message {
 }
 
 @media (max-width: 600px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width:54.8%;
 }
@@ -603,7 +604,7 @@ textarea#message {
     width: 77%;
     padding: 30px 35px;
 }
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width: 52%;
 }
@@ -617,7 +618,7 @@ textarea#message {
 }
 
 @media (max-width: 480px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width: 43%;
 }
@@ -641,7 +642,7 @@ textarea#message {
     width: 70%;
     padding: 25px 30px;
 }
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width: 88%;
 }
@@ -675,7 +676,7 @@ h1.header-agileits {
 }
 
 @media (max-width: 384px) {
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 14px;
     width: 87%;
 }
@@ -693,7 +694,7 @@ h1.header-agileits {
     width: 65%;
     padding: 25px 25px;
 }
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel,textarea#message {
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#chol,input#pre,input#dbl,input#bmi,input#age,input#cig,input#hrt,input#glu,input#usrtel {
     font-size: 13px;
     width: 84%;
 }
@@ -725,8 +726,6 @@ textarea#message {
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: left;
-  height: 50px;
-    
 }
 #w3lDemoBar.w3l-demo-bar {
   position: fixed;
@@ -737,7 +736,6 @@ textarea#message {
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
   padding: 10px 15px;
-    background-color: rgba(0, 0, 0, 0.1);
   
   box-shadow: 0 1px 10px rgba(13, 19, 38, 0.5);
 }
@@ -768,8 +766,6 @@ textarea#message {
 #w3lDemoBar.w3l-demo-bar .w3l-text,
 #w3lDemoBar.w3l-demo-bar .w3l-icon {
   display: inline-block;
-    padding-top: 15px;
-    
 }
 #w3lDemoBar.w3l-demo-bar .w3l-icon svg{
   display: block;
@@ -782,8 +778,8 @@ textarea#message {
   color: white;
   text-decoration: none;
   line-height: 24px;
-    font-weight:bold;
- 
+  opacity: .9;
+    font-weight: bold;
 }
 #w3lDemoBar.w3l-demo-bar a:hover {
   opacity: 1;
