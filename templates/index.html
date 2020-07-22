@@ -39,105 +39,110 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<p><br><br></p>
 <div class="content-w3ls">
 	<form action="{{ url_for('predict')}}"method="post" id="idOfForm">
-		<div class="form-wthree1 wthree w3-agileits agileits-w3layouts agile w3-agile">		
-			
-			<div class="form-control"> 
-				<label class="header">Select Gender<span>:</span></label>
-                <select name="male" required="required">
+        <div class="form-wthree1 wthree w3-agileits agileits-w3layouts agile w3-agile">
+
+            <div class="form-control">
+                <label class="header">Select Gender<span>:</span></label>
+                <select name="Gender" required="required" id="select1">
                         <option data-display="Sex" value="1">Male</option>
                         <option value="0">Female</option>
                             
                 </select>
             </div>
-			<div class="form-control"> 
-				<label class="header">Enter Your Age<span>:</span></label>
-                <input type="number" name="age"id="lastname" placeholder="Age" title="Please enter your Age" required="required" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))" min="5" max="130" step="any" />
-			</div>
-			<div class="form-control"> 
-				<label class="header">Are You Smoker <span>:</span></label>
-                <select name="currentsmoker" required="required">
+            <div class="form-control">
+                <label class="header">Enter Your Age<span>:</span></label>
+                <input type="number" name="age" id="age" placeholder="Age" title="Please enter your Age" required="required" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))" min="0" max="110" step="any" />
+            </div>
+           
+
+            <div class="form-control">
+                <label class="header">Are You Smoker <span>:</span></label>
+                <select name="currentsmoker" required="required" id="select2">
                         <option value="1">Yes</option>
                         <option value="0">No</option>
-                </select>			
+                </select>
             </div>
-			
-			<div class="form-control"> 
-				<label class="header">Cigarettes-PerDay<span>:</span></label>
-                <input type="number" name="cigsPerDay" id="lastname" placeholder="How Many Cigarettes-PerDay ?" title="How Many Cigarettes-perday ?" required="required" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))" min="0" max="110" step="any"/>
-    			
-			</div>
-			
-			<div class="form-control"> 
+
+            <div class="form-control">
+                <label class="header">Cigarettes-PerDay<span>:</span></label>
+                <input type="number" name="cigsPerDay" id="cig" placeholder="How Many Cigarettes-PerDay ?" title="How Many Cigarettes-perday ?" required="required" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))" min="0" max="110" step="any"/>
+
+            </div>
+
+
+
+            <div class="form-control">
                 <label class="header">Blood Pressure<span>:</span></label>
-				<input type="number" id="address2" name="BPMeds" placeholder="Do You Take Blood Pressure Medicine?" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" title="Do You Take Blood Pressure Medicine Recently ?" required="required" min="0" step="any">
-			</div>
-			
-			<div class="form-control"> 
-				<label class="header">Previously Stroke <span>:</span></label>
-                <select name="prevalentStroke" title="Are You Previously Had a Stroke ?" required="required">
-                        <option value="1">Yes</option>
-                        <option value="0">No</option>
-                </select>			
-                </div>
-			
-			<div class="form-control"> 
-				<label class="header">Prevalent Hypertensive <span>:</span></label>
-                <select name="prevalentHyp" title="Have You Had Hypertensive ?" required="required">
-                        <option value="1">Yes</option>
-                        <option value="0">No</option>
-                </select>			
+                <input type="number" id="address2" name="BPMeds" placeholder="Do You Take Blood Pressure Medicine?" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" title="Do You Take Blood Pressure Medicine Recently ?" required="required"
+                    step="any" min="0">
             </div>
-            
-		
-		</div>
-		
-		<div class="form-wthree2 wthree w3-agileits agileits-w3layouts agile w3-agile">
-		
-            <div class="form-control"> 
-				<label class="header"> Diabetes <span>:</span></label>
-                <select name="diabetes" title="Are You Had Diabetes ?" required="required">
+
+            <div class="form-control">
+                <label class="header">Previously Stroke <span>:</span></label>
+                <select name="prevalentStroke" title="Are You Previously Had a Stroke ?" required="required" id="select3">
                         <option value="1">Yes</option>
                         <option value="0">No</option>
-                </select>			
+                </select>
             </div>
-			<div class="form-control"> 
-				<label class="header">Cholesterol Level<span>:</span></label>
-				<input type="number" id="zip" name="totChol" placeholder="Cholesterol Level" title="How Much Total Cholesterol Level ?" required="required" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" step="any" min="0">
-			</div>
-			
-			<div class="form-control">
-				<label class="header">systolic blood<br>pressure<span>:</span></label>	
-				<input type="number" id="usrtel" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)"  name="sysBP" placeholder="How much systolic blood pressure ?" title="How much systolic blood pressure ?" min="0" required="required" step="any">
-			</div>
-			
-			<div class="form-control">	
-				<label class="header">Diastolic Blood<br>Pressure<span>:</span></label>	
-				<input type="number" id="usrtel" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)"  name="diaBP" placeholder="How Much Diastolic Blood Pressure ?" title="How Much Diastolic Blood Pressure ?" min="0" required="required" step="any">
-			</div>	
-			
-			<div class="form-control">	
-				<label class="header">Body Mass Index<span>:</span></label>
-				<input type="number" name="BMI" id="email" placeholder="How Much Body Mass Index ?" title="How Much Body Mass Index ?" required="requird" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" min="0" step="any">
-			</div>
-			
-			<div class="form-control">
-				<label class="header">Heart Rate<span>:</span></label>
-				<input type="number" name="heartRate" id="email" placeholder="How Much Heart Rate ?" title="How Much Heart Rate ?" required="requird" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))" min="0"step="any">
-			</div>
-			
-			<div class="form-control">
-				<label class="header">Glucose Level<span>:</span></label>
-				<input type="number" name="glucose" id="email" placeholder="How Much Glucose Level ?" title="How Much Glucose Level ?" required="requird" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" min="0" step="any">
-			</div>
-            
-		</div>
-		<div class="clear"></div>
-		<div class="form-control">
-			<label class="enquiry">Result<span>:</span></label>
-		    <output id="message" style="color:white;font-size:18px;">{{ prediction_text }}<br>{{predictions_prob}} &nbsp; <span style="color:yellow;">{{p}}{{per}}</span></output>
-			<div class="clear"></div>
-		</div>
-		<div class="form-control last">
+
+            <div class="form-control">
+                <label class="header">Prevalent Hypertensive <span>:</span></label>
+                <select name="prevalentHyp" title="Have You Had Hypertensive ?" required="required" id="select4">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </select>
+            </div>
+
+
+        </div>
+
+        <div class="form-wthree2 wthree w3-agileits agileits-w3layouts agile w3-agile">
+
+            <div class="form-control">
+                <label class="header"> Diabetes <span>:</span></label>
+                <select name="diabetes" title="Are You Had Diabetes ?" required="required" id="select5">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label class="header">Cholesterol Level<span>:</span></label>
+                <input type="number" id="chol" name="totChol" placeholder="Cholesterol Level" title="How Much Total Cholesterol Level ?" required="required" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" step="any" min="0">
+            </div>
+
+            <div class="form-control">
+                <label class="header">systolic blood<br>pressure<span>:</span></label>
+                <input type="number" id="pre" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" name="sysBP" placeholder="How much systolic blood pressure ?" title="How much systolic blood pressure ?" required="required" step="any" min="0">
+            </div>
+
+            <div class="form-control">
+                <label class="header">Diastolic Blood<br>Pressure<span>:</span></label>
+                <input type="number" id="dbl" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" name="diaBP" placeholder="How Much Diastolic Blood Pressure ?" title="How Much Diastolic Blood Pressure ?" required="required" step="any" min="0">
+            </div>
+
+            <div class="form-control">
+                <label class="header">Body Mass Index<span>:</span></label>
+                <input type="number" name="BMI" id="bmi" placeholder="How Much Body Mass Index ?" title="How Much Body Mass Index ?" required="requird" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" step="any" min="0">
+            </div>
+
+            <div class="form-control">
+                <label class="header">Heart Rate<span>:</span></label>
+                <input type="number" name="heartRate" id="hrt" placeholder="How Much Heart Rate ?" title="How Much Heart Rate ?" required="requird" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))" min="0" step="any">
+            </div>
+
+            <div class="form-control">
+                <label class="header">Glucose Level<span>:</span></label>
+                <input type="number" name="glucose" id="glu" placeholder="How Much Glucose Level ?" title="How Much Glucose Level ?" required="requird" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" step="any" min="0">
+            </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="form-control">
+            <label class="enquiry">Result<span>:</span></label>
+            <output id="message" style="color:black;font-size:18px;">{{ prediction_text }}<br>{{predictions_prob}} &nbsp; <span style="color:red;">{{p}}{{per}}</span></output>
+            <div class="clear"></div>
+        </div>
+        <div class="form-control last">
             <a><input type="text" value="send" style="text-align: center" class="reset" onclick="send()"></a>
             <button type="submit" class="register" id="message" >Predict</button>
             <div class="clear"></div>
