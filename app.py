@@ -7,9 +7,6 @@ import pickle
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
 
-delay = 5
-
-
 
 @app.route('/')
 def home():
