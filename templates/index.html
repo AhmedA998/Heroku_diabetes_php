@@ -138,15 +138,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="clear"></div>
 		</div>
 		<div class="form-control last">
-             <a><input type="text" style="text-align: center" value="" class="reset" onclick="send()">send</a>
-			<button type="submit" class="register" id="message">Predict</button>
-			
-			<div class="clear"></div>
-		</div>
-    <!--{{ prediction_text }}<br>{{predictions_prob}}-->
+            <a><input type="text" value="send" style="text-align: center" class="reset" onclick="send()"></a>
+            <button type="submit" class="register" id="message" >Predict</button>
+            <div class="clear"></div>
+        </div>
+        <!--{{ prediction_text }}<br>{{predictions_prob}}-->
 
-	</form>
-</div>
+        </form>
+        
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -216,4 +217,5 @@ function send() {
 }
     </script>
 </body>
+
 </html>
