@@ -60,7 +60,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="form-control">
                 <label class="header">Enter Your Age<span>:</span></label>
-                <input type="number" name="age" id="age" placeholder="Age" title="Please enter your Age" required="required" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))" min="5" max="110" step="any" />
+                <input type="number" name="age" id="age" placeholder="Age" title="Please enter your Age" required="required" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))" min="0" max="110" step="any" />
             </div>
            
 
@@ -84,7 +84,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="form-control">
                 <label class="header">Blood Pressure<span>:</span></label>
                 <input type="number" id="address2" name="BPMeds" placeholder="Do You Take Blood Pressure Medicine?" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" title="Do You Take Blood Pressure Medicine Recently ?" required="required"
-                    step="any">
+                    step="any" min="0">
             </div>
 
             <div class="form-control">
@@ -122,27 +122,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
             <div class="form-control">
                 <label class="header">systolic blood<br>pressure<span>:</span></label>
-                <input type="number" id="pre" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" name="sysBP" placeholder="How much systolic blood pressure ?" title="How much systolic blood pressure ?" required="required" step="any">
+                <input type="number" id="pre" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" name="sysBP" placeholder="How much systolic blood pressure ?" title="How much systolic blood pressure ?" required="required" step="any" min"0">
             </div>
 
             <div class="form-control">
                 <label class="header">Diastolic Blood<br>Pressure<span>:</span></label>
-                <input type="number" id="dbl" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" name="diaBP" placeholder="How Much Diastolic Blood Pressure ?" title="How Much Diastolic Blood Pressure ?" required="required" step="any">
+                <input type="number" id="dbl" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" name="diaBP" placeholder="How Much Diastolic Blood Pressure ?" title="How Much Diastolic Blood Pressure ?" required="required" step="any" min="0">
             </div>
 
             <div class="form-control">
                 <label class="header">Body Mass Index<span>:</span></label>
-                <input type="number" name="BMI" id="bmi" placeholder="How Much Body Mass Index ?" title="How Much Body Mass Index ?" required="requird" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" step="any">
+                <input type="number" name="BMI" id="bmi" placeholder="How Much Body Mass Index ?" title="How Much Body Mass Index ?" required="requird" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" step="any" min"0">
             </div>
 
             <div class="form-control">
                 <label class="header">Heart Rate<span>:</span></label>
-                <input type="number" name="heartRate" id="hrt" placeholder="How Much Heart Rate ?" title="How Much Heart Rate ?" required="requird" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" step="any">
+                <input type="number" name="heartRate" id="hrt" placeholder="How Much Heart Rate ?" title="How Much Heart Rate ?" required="requird" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" step="any" min"0">
             </div>
 
             <div class="form-control">
                 <label class="header">Glucose Level<span>:</span></label>
-                <input type="number" name="glucose" id="glu" placeholder="How Much Glucose Level ?" title="How Much Glucose Level ?" required="requird" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" step="any">
+                <input type="number" name="glucose" id="glu" placeholder="How Much Glucose Level ?" title="How Much Glucose Level ?" required="requird" onkeypress="return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" step="any" min"0">
             </div>
 
         </div>
