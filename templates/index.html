@@ -25,7 +25,56 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     
     </style>
 <!-- /css files -->
+  <script>
+ var firebaseConfig = {
+    apiKey: "AIzaSyBA2yGgYtUflvuxRw6Eiyids90uJYcB_Zw",
+    authDomain: "diseaseprediction-2e877.firebaseapp.com",
+    databaseURL: "https://diseaseprediction-2e877.firebaseio.com",
+    projectId: "diseaseprediction-2e877",
+    storageBucket: "diseaseprediction-2e877.appspot.com",
+    messagingSenderId: "884199020700",
+    appId: "1:884199020700:web:5316486793ffdda7747559",
+    measurementId: "G-81JTHNZH1K"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
   
+	const auth = firebase.auth();
+	
+	
+	function signOut(){
+		
+		auth.signOut();
+		alert("Signed Out");
+		document.location.href="../index.html";
+	}
+	
+	
+	
+	auth.onAuthStateChanged(function(user){
+		
+		if(user){
+			
+			var email = user.email;
+			alert("Active User " + email);
+			
+			//Take user to a different or home page
+
+			//is signed in
+			
+		}else{
+			
+			alert("No Active User");
+			//no user is signed in
+		}
+		
+		
+		
+	});
+	
+
+
+	</script>
 <script async>(function(w, d) { w.CollectId = "5f1a05da03f2d714cb7004d7"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);
 	</script>	
 	</head>
