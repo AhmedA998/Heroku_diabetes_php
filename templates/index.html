@@ -25,58 +25,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     
     </style>
 <!-- /css files -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
-  <script>
- var firebaseConfig = {
-    apiKey: "AIzaSyAYBJkrUGNXyGYO0UL1EVqdTd3TBX75sx0",
-    authDomain: "diseasepridection.firebaseapp.com",
-    databaseURL: "https://diseasepridection.firebaseio.com",
-    projectId: "diseasepridection",
-    storageBucket: "diseasepridection.appspot.com",
-    messagingSenderId: "950090652362",
-    appId: "1:950090652362:web:f8d22a96acdbe5ae7c3233",
-    measurementId: "G-CQN0QQX0NT"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  
-	const auth = firebase.auth();
-	
-	
-	function signOut(){
-		
-		auth.signOut();
-		alert("Signed Out");
-		document.location.href="../index.html";
-	}
-	
-	
-	
-	auth.onAuthStateChanged(function(user){
-		
-		if(user){
-			
-			var email = user.email;
-			alert("Active User " + email);
-			
-			//Take user to a different or home page
-
-			//is signed in
-			
-		}else{
-			
-			alert("No Active User");
-			//no user is signed in
-		}
-		
-		
-		
-	});
-	
-
-
-	</script>
 <script async>(function(w, d) { w.CollectId = "5f1a05da03f2d714cb7004d7"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);
 	</script>	
 	</head>
@@ -207,10 +155,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
 
     <script>
         // Your web app's Firebase configuration
@@ -227,6 +174,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.firestore();
+	const auth = firebase.auth();
+	    
+	    
+	function signOut(){
+		
+		auth.signOut();
+		alert("Signed Out");
+		document.location.href="../index.html";
+	}
+	
+	
+	
+	auth.onAuthStateChanged(function(user){
+		
+		if(user){
+			
+			var email = user.email;
+			alert("Active User " + email);
+			
+			//Take user to a different or home page
+
+			//is signed in
+			
+		}else{
+			
+			alert("No Active User");
+			//no user is signed in
+		}
+		
+		
+		
+	});
+	    
     </script>
     <script>
     var db = firebase.firestore();
