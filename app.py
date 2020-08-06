@@ -23,16 +23,15 @@ def predict():
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
     predictionsProb =model.predict_proba(final_features)
-    
-    
-    c=(predictionsProb)
-    for b,value in enumerate(c,1):
-      x=round(max(value*100))
+
+    s=round(prediction[0,0])
+   
+    mk = predictionsProb[0,1]*100
      
-    if prediction==1 :
-     return render_template('index.html', prediction_text ='you are at risk of infection by heart disease over the next ten years',  predictions_prob = 'with ratio  ',p = x,per = '%')
-    elif  prediction==0 :
-     return render_template('index.html', prediction_text ='You are not threatened with heart disease during the next ten years',  predictions_prob = 'with ratio  ',p = x, per = '%')
+    if s==1 :
+     return render_template('index.html', prediction_text ='you are at risk of infection by heart disease over the next ten years',  predictions_prob = 'with ratio  ',p = mk,per = '%')
+    else:
+     return render_template('index.html', prediction_text ='You are not threatened with heart disease during the next ten years',  predictions_prob = 'with ratio  ',p = mk, per = '%')
 
    # output = round(prediction[0], 2)
    
