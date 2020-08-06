@@ -20,18 +20,18 @@ def predict():
     For rendering results on HTML GUI
     '''
     int_features = [float(x) for x in request.form.values()]
-    final_features = [np.array(int_features)]
-    prediction = model.predict(final_features)
-    predictionsProb =model.predict_proba(final_features)
-
-    s=round(prediction[0,0])
-   
+    final_features = np.array(int_features)
+    prediction = model.predict([final_features])
+    predictionsProb =model.predict_proba([final_features])
+    s=round(prediction[0])
+    
+    
     mk = predictionsProb[0,1]*100
-     
+  
     if s==1 :
-     return render_template('index.html', prediction_text ='you are at risk of infection by heart disease over the next ten years',  predictions_prob = 'with ratio  ',p = mk,per = '%')
+     return render_template('index.html', prediction_text ='you are at risk of infection by diabete',  predictions_prob = 'with ratio  ',p = mk , per = '%')
     else:
-     return render_template('index.html', prediction_text ='You are not threatened with heart disease during the next ten years',  predictions_prob = 'with ratio  ',p = mk, per = '%')
+     return render_template('index.html', prediction_text ='You are not threatened with diabete',  predictions_prob = 'with ratio  ',p = mk, per = '%')
 
    # output = round(prediction[0], 2)
    
