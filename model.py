@@ -65,12 +65,6 @@ CM = confusion_matrix(y_test, y_pred)
 # drawing confusion matrix
 sns.heatmap(CM, center = True)
 plt.show()
-#l=y_pred.predict(f)
-#prediction = GaussianNBModel.predict(0,70,1,0,0,0,1,1,0,107,143,93,25.8,68,62)
-#print(prediction)
-#output = prediction[0]
-#predictions =GaussianNBModel.predict([[1,43,1,0,0,0,0,0,0,126,152,96.5,25.65,86,82]])
-#print ( predictions )
 
 
 
